@@ -54,22 +54,26 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ title, description, redirectedU
                 </CardActions>
             </Card>
             <Modal open={isModalOpen}>
-                <ClickAwayListener onClickAway={() => setIsModalOpen(false)}>
-                    <Paper sx={{ width: '90vw', position: 'absolute', right: '5%' }}>
-                        <Box display="flex" flexDirection="column">
-                            <Box display="flex" justifyContent="space-between" sx={{ px: 3, py: 0 }}>
-                                <Typography sx={{ fontSize: '20px', fontFamily: "'Poppins', sans-serif", fontWeight: 'bold', lineHeight: '30px' }}>
-                                    {title}
-                                </Typography>
-                                <IconButton onClick={() => setIsModalOpen(false)}>
-                                    <CloseIcon />
-                                </IconButton>
-                            </Box>
+                <Box>
+                    <ClickAwayListener onClickAway={() => setIsModalOpen(false)}>
+                        <Paper sx={{ width: '90vw', position: 'absolute', right: '5%' }}>
+                            <Box display="flex" flexDirection="column">
+                                <Box display="flex" justifyContent="space-between" sx={{ px: 3, py: 0 }}>
+                                    <Typography
+                                        sx={{ fontSize: '20px', fontFamily: "'Poppins', sans-serif", fontWeight: 'bold', lineHeight: '30px' }}
+                                    >
+                                        {title}
+                                    </Typography>
+                                    <IconButton onClick={() => setIsModalOpen(false)}>
+                                        <CloseIcon />
+                                    </IconButton>
+                                </Box>
 
-                            <CustomisedCarousel inputArray={carouselInputArray} />
-                        </Box>
-                    </Paper>
-                </ClickAwayListener>
+                                <CustomisedCarousel inputArray={carouselInputArray} />
+                            </Box>
+                        </Paper>
+                    </ClickAwayListener>
+                </Box>
             </Modal>
         </>
     );

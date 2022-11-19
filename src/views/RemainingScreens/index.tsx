@@ -48,7 +48,7 @@ const RemainingScreens = () => {
     return (
         <>
             <Navbar />
-            <section id="about" ref={aboutSectionRef} style={{ scrollMarginTop: '7vh', background: '#f5f5f5' }}>
+            <section id="about" ref={aboutSectionRef} style={{ scrollMarginTop: '7vh', height: '100vh', background: '#f5f5f5' }}>
                 <About />
             </section>
             <section id="certifications" ref={certificationsSectionRef} style={{ scrollMarginTop: '7vh', background: '#ffff' }}>

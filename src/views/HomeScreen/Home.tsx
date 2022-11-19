@@ -4,7 +4,7 @@ import AnimatedBackground from '../../components/AnimatedBackground/AnimatedBack
 
 const Home = () => {
     return (
-        <section id="home" style={{ maxHeight: '100vh', scrollMarginTop: '1rem' }}>
+        <section id="home" style={{ minHeight: '100vh', maxHeight: '100vh', scrollMarginTop: '1rem' }}>
             <AnimatedBackground />
         </section>
     );

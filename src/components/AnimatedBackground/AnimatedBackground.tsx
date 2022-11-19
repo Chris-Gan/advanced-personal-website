@@ -24,23 +24,24 @@ const AnimatedBackground: FC = () => {
                 options={particlesConfig as ISourceOptions}
             />
             <Box display="flex" sx={{ minHeight: '100vh', justifyContent: 'flex-start', alignItems: 'center', pt: '20vh' }} flexDirection="column">
-                <img
+                <Box
+                    component="img"
                     src="image.png"
-                    style={{ borderRadius: '50%', width: '180px', border: '#E1F5FE 5px solid', objectFit: 'cover' }}
+                    sx={{ borderRadius: '50%', width: { xs: '120px', lg: '180px' }, border: '#E1F5FE 5px solid', objectFit: 'cover' }}
                     alt="personal-animated"
                 />
-                <Typography variant="h4" sx={{ fontWeight: '800', mt: 3.5, mb: 2.5 }}>
+                <Typography sx={{ fontWeight: '800', mt: 3.5, mb: 2.5, fontSize: { xs: '20px', lg: '30px' } }}>
                     {`I'm`} <Typed strings={[' Chris Gan.', ' a front-end developer.']} typeSpeed={40} backSpeed={50} loop />
                 </Typography>
-                <Box display="flex" justifyContent="space-between" sx={{ minWidth: '8%', zIndex: 3 }}>
+                <Box display="flex" justifyContent="space-between" sx={{ minWidth: { xs: '20%', lg: '8%' }, zIndex: 3 }}>
                     <a href="https://github.com/Chris-Gan?tab=repositories" target="_blank" rel="noreferrer" style={{ color: 'black' }}>
-                        <GitHubIcon />
+                        <GitHubIcon sx={{ fontSize: { xs: '16px', lg: '1.5rem' } }} />
                     </a>
                     <a href="https://www.linkedin.com/in/chris-gan-a50902160/" target="_blank" rel="noreferrer" style={{ color: 'black' }}>
-                        <LinkedInIcon />
+                        <LinkedInIcon sx={{ fontSize: { xs: '16px', lg: '1.5rem' } }} />
                     </a>
                     <a href="mailto:ganboontoh@gmail.com" style={{ color: 'black' }}>
-                        <EmailIcon />
+                        <EmailIcon sx={{ fontSize: { xs: '16px', lg: '1.5rem' } }} />
                     </a>
                 </Box>
                 <AnimatedArrowButton />
