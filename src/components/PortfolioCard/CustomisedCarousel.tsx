@@ -7,10 +7,10 @@ interface CustomisedCarouselProps {
 }
 const CustomisedCarousel: FC<CustomisedCarouselProps> = ({ inputArray }) => {
     return (
-        <Carousel stopAutoPlayOnHover indicators>
+        <Carousel stopAutoPlayOnHover>
             {inputArray.map(({ name, source }) => (
                 <Box display="flex" flexDirection="column" key={name}>
-                    <Box sx={{ height: '100%', objectFit: 'contain' }} component="img" src={source} />
+                    <Box sx={{ width: { xs: '100vw', md: 'initial' }, objectFit: 'contained' }} component="img" src={source} />
                 </Box>
             ))}
         </Carousel>

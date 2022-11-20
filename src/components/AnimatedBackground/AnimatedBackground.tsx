@@ -12,7 +12,6 @@ import AnimatedArrowButton from '../AnimatedArrowButton/AnimatedArrowButton';
 
 const AnimatedBackground: FC = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
-        console.log(engine);
         await loadFull(engine);
     }, []);
 

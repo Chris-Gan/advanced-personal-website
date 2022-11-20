@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-// import Drawer from '@mui/material/Drawer';
 import { Typography, Box, Slide, Grow, Divider } from '@mui/material';
 import MobileNavbarListItem from './MobileNavbarListItem';
 
@@ -9,7 +8,6 @@ const MobileNavbar = () => {
     const [isNavbarAppear, setIsNavbarAppear] = useState<boolean>(false);
     const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
     const containerRef = useRef<Element | null>(null);
-    // const expandingFromRef = useRef<Element | null>(null);
 
     const handleScroll = () => {
         setIsNavbarAppear(window.scrollY > 200);
@@ -17,7 +15,6 @@ const MobileNavbar = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-        console.log(isNavbarAppear);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);

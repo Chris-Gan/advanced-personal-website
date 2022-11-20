@@ -32,11 +32,11 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ title, description, redirectedU
                         </IconButton>
                     }
                 />
-                <CardMedia component="div" sx={{ height: '240px' }}>
+                <CardMedia component="div">
                     <CustomisedCarousel inputArray={carouselInputArray} />
                 </CardMedia>
                 <CardContent>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" sx={{ pt: { xs: 0, md: 'initial' } }} color="text.secondary">
                         {description}
                     </Typography>
                 </CardContent>
@@ -56,7 +56,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ title, description, redirectedU
             <Modal open={isModalOpen}>
                 <Box>
                     <ClickAwayListener onClickAway={() => setIsModalOpen(false)}>
-                        <Paper sx={{ width: '90vw', position: 'absolute', right: '5%', mt: { xs: '30vh', md: 0 } }}>
+                        <Paper sx={{ width: '90vw', position: 'absolute', right: '5%', mt: { xs: '20vh', md: 0 } }}>
                             <Box display="flex" flexDirection="column">
                                 <Box display="flex" justifyContent="space-between" sx={{ px: 3, py: 0 }}>
                                     <Typography
@@ -68,8 +68,9 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ title, description, redirectedU
                                         <CloseIcon />
                                     </IconButton>
                                 </Box>
-
-                                <CustomisedCarousel inputArray={carouselInputArray} />
+                                <Box>
+                                    <CustomisedCarousel inputArray={carouselInputArray} />
+                                </Box>
                             </Box>
                         </Paper>
                     </ClickAwayListener>
