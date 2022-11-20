@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-import Navbar from '../../components/Navbar/Navbar';
+import Navbar from '../../components/Navbar/DesktopNavbar';
 import About from '../../components/About/About';
 import Certification from '../CertificationsScreen';
 import Portfolio from '../PortfolioScreen';
@@ -48,7 +48,7 @@ const RemainingScreens = () => {
     return (
         <>
             <Navbar />
-            <section id="about" ref={aboutSectionRef} style={{ scrollMarginTop: '7vh', height: '100vh', background: '#f5f5f5' }}>
+            <section id="about" ref={aboutSectionRef} style={{ scrollMarginTop: '7vh', background: '#f5f5f5' }}>
                 <About />
             </section>
             <section id="certifications" ref={certificationsSectionRef} style={{ scrollMarginTop: '7vh', background: '#ffff' }}>

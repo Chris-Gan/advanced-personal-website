@@ -1,8 +1,8 @@
 import { Box, AppBar, Toolbar, Typography, Slide } from '@mui/material';
 import React, { useState, useEffect, useRef } from 'react';
-import NavbarItem from './NavbarItem';
+import NavbarItem from './DesktopNavbarItem';
 
-const Navbar = () => {
+const DesktopNavbar = () => {
     const [isNavbarExpanded, setIsNavbarExpanded] = useState<boolean>(false);
     const containerRef = useRef<Element | null>(null);
 
@@ -43,4 +43,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default DesktopNavbar;

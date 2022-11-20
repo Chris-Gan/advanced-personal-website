@@ -60,7 +60,7 @@ const Certification = () => {
                     </Box>
                 </Box>
             </Box>
-            <Box display="flex" justifyContent="flex-between" sx={{ mx: '9vw' }}>
+            <Box display="flex" justifyContent="flex-between" sx={{ mx: '9vw', flexDirection: { xs: 'column', md: 'row' } }}>
                 {cardDetails.map((card, index) => {
                     const { front, back } = card;
                     const { title, descriptions } = front;

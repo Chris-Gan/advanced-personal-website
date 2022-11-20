@@ -6,8 +6,14 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const Footer = () => {
     return (
-        <Box display="flex" flexDirection="column" justifyContent="center" sx={{ background: '#333', height: '20vh' }} alignItems="center">
-            <Box display="flex" justifyContent="space-between" sx={{ minWidth: '5vw' }}>
+        <Box
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            sx={{ background: '#333', height: { xs: '23vh', md: '20vh' } }}
+            alignItems="center"
+        >
+            <Box display="flex" justifyContent="space-between" sx={{ minWidth: { xs: '20vw', md: '5vw' }, pb: { xs: 1, md: 0 } }}>
                 <a href="https://github.com/Chris-Gan?tab=repositories" target="_blank" rel="noreferrer" style={{ color: 'black' }}>
                     <GitHubIcon sx={{ color: '#fff', fontSize: '16px' }} />
                 </a>

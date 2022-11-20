@@ -31,23 +31,23 @@ const BackCard: FC<BackCardProps> = ({ frontCardTitle, backCardDetails, updateCa
                                         <li key={name}>
                                             <Box display="flex" alignItems="center">
                                                 {source !== '' ? (
-                                                    <>
-                                                        <a
-                                                            style={{
-                                                                fontSize: '16px',
-                                                                fontFamily: "'Poppins', sans-serif",
-                                                                color: '#748182',
-                                                                lineHeight: '28px',
-                                                                textDecoration: 'none',
-                                                            }}
-                                                            href={source}
-                                                            target="_blank"
-                                                            rel="noreferrer"
-                                                        >
-                                                            {name}
-                                                        </a>
-                                                        <OpenInNewIcon sx={{ px: 1, fontSize: '16px', color: '#748182' }} />
-                                                    </>
+                                                    <a
+                                                        style={{
+                                                            fontSize: '16px',
+                                                            fontFamily: "'Poppins', sans-serif",
+                                                            color: '#748182',
+                                                            lineHeight: '28px',
+                                                            textDecoration: 'none',
+                                                        }}
+                                                        href={source}
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
+                                                        {name}
+                                                        <OpenInNewIcon
+                                                            sx={{ px: 1, transform: 'translate(0px, 4px)', fontSize: '16px', color: '#748182' }}
+                                                        />
+                                                    </a>
                                                 ) : (
                                                     <Typography sx={{ fontSize: '16px', fontFamily: "'Poppins', sans-serif", color: '#748182' }}>
                                                         {name}

@@ -26,7 +26,7 @@ const FlippableCard: FC<FlippableCardProps> = ({
     backCardStyle,
 }) => {
     return (
-        <Box display="flex" sx={{ flex: 1, ...cardContainerStyle, mx: 1 }}>
+        <Box display="flex" sx={{ flex: 1, ...cardContainerStyle, mx: 1, mb: { xs: 2, md: 0 } }}>
             <ReactCardFlip
                 isFlipped={isCardFlipped}
                 flipDirection="horizontal"
