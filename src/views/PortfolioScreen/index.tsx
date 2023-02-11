@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import PortfolioCard from '../../components/PortfolioCard/PortfolioCard';
-import { socialAppCarousel } from '../../utils/utils';
+import { newsAppCarousel, socialAppCarousel } from '../../utils/utils';
 
 const Portfolio = () => {
     return (
@@ -11,10 +11,16 @@ const Portfolio = () => {
             </Typography>
             <Box display="flex" sx={{ pt: 2, flexDirection: { xs: 'column', md: 'row' } }}>
                 <PortfolioCard
-                    title="Social Website"
+                    title="Duplicated Social Website"
                     description="This is just a static website trying to duplicate Facebook focus mainly on the application of Formik and Yup validation on the login page "
                     redirectedUrl="https://chris-social.netlify.app/login"
                     carouselInputArray={socialAppCarousel}
+                />
+                <PortfolioCard
+                    title="News Website"
+                    description="This is a NextJS 13 web application created mainly on the application of server side rendering, Tailwind CSS and dark & light mode toggle "
+                    redirectedUrl="https://chris-news-app-chris-gan.vercel.app/"
+                    carouselInputArray={newsAppCarousel}
                 />
             </Box>
         </Box>

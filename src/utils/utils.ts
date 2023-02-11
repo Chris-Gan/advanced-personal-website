@@ -205,6 +205,13 @@ export const socialAppCarousel = [
     { name: 'Static Personal Page', source: 'socialApp/static_personal_page.png' },
 ];
 
+export const newsAppCarousel = [
+    { name: 'Light Mode General Page', source: 'newsApp/light_mode_general.png' },
+    { name: 'Light Mode Details Page', source: 'newsApp/light_mode_details.png' },
+    { name: 'Dark Mode General Page', source: 'newsApp/dark_mode_general.png' },
+    { name: 'Dark Mode Details Page', source: 'newsApp/dark_mode_details.png' },
+];
+
 export interface ContactFormInterface {
     from_name: string;
     sender_email: string;

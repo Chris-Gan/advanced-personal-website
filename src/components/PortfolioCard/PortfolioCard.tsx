@@ -19,7 +19,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ title, description, redirectedU
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
     return (
         <>
-            <Card sx={{ maxWidth: 450 }}>
+            <Card sx={{ maxWidth: 450, mr: { md: '50px' }, mb: { xs: '20px', md: 'inherit' } }}>
                 <CardHeader
                     title={title}
                     sx={{
