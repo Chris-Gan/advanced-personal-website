@@ -211,6 +211,12 @@ export const newsAppCarousel = [
     { name: 'Dark Mode General Page', source: 'newsApp/dark_mode_general.png' },
     { name: 'Dark Mode Details Page', source: 'newsApp/dark_mode_details.png' },
 ];
+export const chatGPTAppCarousel = [
+    { name: 'Login Page', source: 'clonedChatGPT/loginPage.jpg' },
+    { name: 'Authentication Page', source: 'clonedChatGPT/googleAuthentication.jpg' },
+    { name: 'Home Page', source: 'clonedChatGPT/homePage.jpg' },
+    { name: 'Conversation Screen', source: 'clonedChatGPT/conversation.jpg' },
+];
 
 export interface ContactFormInterface {
     from_name: string;

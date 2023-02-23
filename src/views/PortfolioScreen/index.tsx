@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import PortfolioCard from '../../components/PortfolioCard/PortfolioCard';
-import { newsAppCarousel, socialAppCarousel } from '../../utils/utils';
+import { chatGPTAppCarousel, newsAppCarousel, socialAppCarousel } from '../../utils/utils';
 
 const Portfolio = () => {
     return (
@@ -21,6 +21,12 @@ const Portfolio = () => {
                     description="This is a NextJS 13 web application created mainly on the application of server side rendering, Tailwind CSS and dark & light mode toggle "
                     redirectedUrl="https://chris-news-app-chris-gan.vercel.app/"
                     carouselInputArray={newsAppCarousel}
+                />
+                <PortfolioCard
+                    title="Cloned ChatGPT"
+                    description="Cloning ChatGPT using NextJS 13, Tailwind CSS, Firebase & Google Authentication "
+                    redirectedUrl="https://chatgpt-clone-drk7x0tjb-chris-gan.vercel.app/"
+                    carouselInputArray={chatGPTAppCarousel}
                 />
             </Box>
         </Box>
