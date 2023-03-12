@@ -128,23 +128,27 @@ export interface CardDetails {
 export const cardDetails: CardDetails[] = [
     {
         front: {
-            title: 'Actuarial Science',
+            title: 'Web Development',
             descriptions: [
-                'I had a degree in Actuarial Science & Finance and I attempted a few professional exam held by Society of Actuaries (SOA) during my undergraduate studies',
-                'Society of Actuaries (SOA) is a global professional organization for actuaries. The society advances actuaries as leaders in measuring and managing risk to improve financial outcomes for individuals, organizations, and the public',
+                'I discovered my genuine interest in web development especially on the front-end part during my Machine Learning exploration.',
+                'I realised that what I enjoyed the most is neither analysing the data nor increasing the model prediction accuracy, I gained the most satisfactions seeing my codes being converted into something attractive on the screen',
             ],
         },
         back: [
             {
-                organisation: 'Society of Actuaries',
+                organisation: 'Udemy',
+                certificates: [{ name: '2021 Web Development Bootcamp', source: 'certificates/The Complete 2021 Web Development Bootcamp.pdf' }],
+            },
+            {
+                organisation: 'MOOC',
                 certificates: [
-                    { name: 'Exam Probabilty', source: 'certificates/SOA Exam P.pdf' },
-                    { name: 'Exam Financial Mathematics', source: 'certificates/SOA Exam FM.pdf' },
-                    { name: 'Exam Investment & Financial Markets', source: 'certificates/SOA Exam IFM.pdf' },
-                    { name: 'VEE Economincs', source: '' },
-                    { name: 'VEE Applied Statistics', source: '' },
-                    { name: 'VEE Corporate Finance', source: '' },
+                    { name: 'Java Programming I', source: 'certificates/Java Programming I.pdf' },
+                    { name: 'Java Programming II', source: 'certificates/Java Programming II.pdf' },
                 ],
+            },
+            {
+                organisation: 'AWS',
+                certificates: [{ name: 'Certified Cloud Practitioner', source: 'certificates/AWS Certified Cloud Practitioner certificate.pdf' }],
             },
         ],
     },
@@ -171,27 +175,23 @@ export const cardDetails: CardDetails[] = [
     },
     {
         front: {
-            title: 'Web Development',
+            title: 'Actuarial Science',
             descriptions: [
-                'I discovered my genuine interest in web development especially on the front-end part during my Machine Learning exploration.',
-                'I realised that what I enjoyed the most is neither analysing the data nor increasing the model prediction accuracy, I gained the most satisfactions seeing my codes being converted into something attractive on the screen',
+                'I had a degree in Actuarial Science & Finance and I attempted a few professional exam held by Society of Actuaries (SOA) during my undergraduate studies',
+                'Society of Actuaries (SOA) is a global professional organization for actuaries. The society advances actuaries as leaders in measuring and managing risk to improve financial outcomes for individuals, organizations, and the public',
             ],
         },
         back: [
             {
-                organisation: 'Udemy',
-                certificates: [{ name: '2021 Web Development Bootcamp', source: 'certificates/The Complete 2021 Web Development Bootcamp.pdf' }],
-            },
-            {
-                organisation: 'MOOC',
+                organisation: 'Society of Actuaries',
                 certificates: [
-                    { name: 'Java Programming I', source: 'certificates/Java Programming I.pdf' },
-                    { name: 'Java Programming II', source: 'certificates/Java Programming II.pdf' },
+                    { name: 'Exam Probabilty', source: 'certificates/SOA Exam P.pdf' },
+                    { name: 'Exam Financial Mathematics', source: 'certificates/SOA Exam FM.pdf' },
+                    { name: 'Exam Investment & Financial Markets', source: 'certificates/SOA Exam IFM.pdf' },
+                    { name: 'VEE Economincs', source: '' },
+                    { name: 'VEE Applied Statistics', source: '' },
+                    { name: 'VEE Corporate Finance', source: '' },
                 ],
-            },
-            {
-                organisation: 'AWS',
-                certificates: [{ name: 'Certified Cloud Practitioner', source: 'certificates/AWS Certified Cloud Practitioner certificate.pdf' }],
             },
         ],
     },
@@ -216,6 +216,12 @@ export const chatGPTAppCarousel = [
     { name: 'Authentication Page', source: 'clonedChatGPT/googleAuthentication.jpg' },
     { name: 'Home Page', source: 'clonedChatGPT/homePage.jpg' },
     { name: 'Conversation Screen', source: 'clonedChatGPT/conversation.jpg' },
+];
+export const amazonAppCarousel = [
+    { name: 'Home Page', source: 'clonedAmazon/homepage.png' },
+    { name: 'Basket Page', source: 'clonedAmazon/shoppingBasket.png' },
+    { name: 'Checkout Page', source: 'clonedAmazon/checkout.png' },
+    { name: 'Orders Page', source: 'clonedAmazon/orders.png' },
 ];
 
 export interface ContactFormInterface {
