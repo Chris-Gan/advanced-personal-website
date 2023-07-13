@@ -19,7 +19,7 @@ const LeftInfo = () => {
                 </Typography>
             </Box>
             <Button sx={{ maxWidth: { xs: '80vw', md: '100vw' } }} endIcon={<DownloadIcon />} variant="outlined">
-                <a href="Chris's Resume 12_JULY_2023.pdf" style={{ color: 'inherit', textDecoration: 'none' }} download>
+                <a href="Chris's Resume 13 July 2023.pdf" style={{ color: 'inherit', textDecoration: 'none' }} download>
                     Download Resume
                 </a>
             </Button>
