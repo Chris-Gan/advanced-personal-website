@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import PortfolioCard from '../../components/PortfolioCard/PortfolioCard';
-import { amazonAppCarousel, chatGPTAppCarousel, newsAppCarousel, socialAppCarousel } from '../../utils/utils';
+import { amazonAppCarousel, chatGPTAppCarousel, emailRegistrationCarousel, newsAppCarousel, socialAppCarousel } from '../../utils/utils';
 
 const Portfolio = () => {
     return (
@@ -10,6 +10,12 @@ const Portfolio = () => {
                 PORTFOLIO
             </Typography>
             <Box display="flex" sx={{ pt: 2, flexDirection: { xs: 'column', md: 'row' }, flexWrap: 'wrap' }}>
+                <PortfolioCard
+                    title="Email Registration"
+                    description="An email registration system created with language switches, theme toggling, form validations & mobile responsiveness"
+                    redirectedUrl="https://invitation-coding-challenge.vercel.app/"
+                    carouselInputArray={emailRegistrationCarousel}
+                />
                 <PortfolioCard
                     title="Cloned Amazon"
                     description="Cloning Amazon with limited functionalities using NextJS 13, Tailwind CSS, Firebase, Google Authentication, Stripe & Webhook "

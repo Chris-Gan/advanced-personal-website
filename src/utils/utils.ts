@@ -224,6 +224,14 @@ export const amazonAppCarousel = [
     { name: 'Orders Page', source: 'clonedAmazon/orders.png' },
 ];
 
+export const emailRegistrationCarousel = [
+    { name: 'Light Theme', source: 'emailInvitation/1. light theme.png' },
+    { name: 'Dark Theme', source: 'emailInvitation/2. dark theme.png' },
+    { name: 'Form Validation', source: 'emailInvitation/3. Form Validation.png' },
+    { name: 'Successful Registration', source: 'emailInvitation/4. Successful.png' },
+    { name: 'Failed Registration', source: 'emailInvitation/5. Fail Case.png' },
+];
+
 export interface ContactFormInterface {
     from_name: string;
     sender_email: string;
