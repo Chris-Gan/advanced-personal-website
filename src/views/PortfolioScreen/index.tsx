@@ -1,46 +1,25 @@
-import React from 'react';
-import { Box, Typography } from '@mui/material';
-import PortfolioCard from '../../components/PortfolioCard/PortfolioCard';
-import { amazonAppCarousel, chatGPTAppCarousel, emailRegistrationCarousel, newsAppCarousel, socialAppCarousel } from '../../utils/utils';
+import { Box, Tab, Tabs, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import FrontendProjects from './FrontendProjects';
+import FullstackProjects from './FullstackProjects';
 
 const Portfolio = () => {
+    const [value, setValue] = useState(0);
+
+    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+        setValue(newValue);
+    };
     return (
         <Box display="flex" flexDirection="column" sx={{ maxWidth: '80vw', mx: 'auto', pb: 4 }}>
             <Typography variant="h5" sx={{ fontFamily: "'Poopins', sans-serif", color: 'inherit', fontWeight: 600, pt: 2 }}>
                 PORTFOLIO
             </Typography>
-            <Box display="flex" sx={{ pt: 2, flexDirection: { xs: 'column', md: 'row' }, flexWrap: 'wrap' }}>
-                <PortfolioCard
-                    title="Email Registration"
-                    description="An email registration system created with language switches, theme toggling, form validations & mobile responsiveness"
-                    redirectedUrl="https://invitation-coding-challenge.vercel.app/"
-                    carouselInputArray={emailRegistrationCarousel}
-                />
-                <PortfolioCard
-                    title="Cloned Amazon"
-                    description="Cloning Amazon with limited functionalities using NextJS 13, Tailwind CSS, Firebase, Google Authentication, Stripe & Webhook "
-                    redirectedUrl="https://cloned-amazon-chris-gan.vercel.app/"
-                    carouselInputArray={amazonAppCarousel}
-                />
-                <PortfolioCard
-                    title="Cloned ChatGPT"
-                    description="Cloning ChatGPT using NextJS 13, Tailwind CSS, Firebase & Google Authentication "
-                    redirectedUrl="https://chatgpt-clone-drk7x0tjb-chris-gan.vercel.app/"
-                    carouselInputArray={chatGPTAppCarousel}
-                />
-                <PortfolioCard
-                    title="News Website"
-                    description="This is a NextJS 13 web application created mainly on the application of server side rendering, Tailwind CSS and dark & light mode toggle "
-                    redirectedUrl="https://chris-news-app-chris-gan.vercel.app/"
-                    carouselInputArray={newsAppCarousel}
-                />
-                <PortfolioCard
-                    title="Duplicated Social Website"
-                    description="This is just a static website trying to duplicate Facebook focus mainly on the application of Formik and Yup validation on the login page "
-                    redirectedUrl="https://chris-social.netlify.app/login"
-                    carouselInputArray={socialAppCarousel}
-                />
-            </Box>
+            <Tabs value={value} onChange={handleChange} aria-label="basic tabs">
+                <Tab label="Full Stack" />
+                <Tab label="Frontend" />
+            </Tabs>
+            <FullstackProjects currentTab={value} index={0} />
+            <FrontendProjects currentTab={value} index={1} />
         </Box>
     );
 };

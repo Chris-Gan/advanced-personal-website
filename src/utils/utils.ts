@@ -231,6 +231,12 @@ export const emailRegistrationCarousel = [
     { name: 'Successful Registration', source: 'emailInvitation/4. Successful.png' },
     { name: 'Failed Registration', source: 'emailInvitation/5. Fail Case.png' },
 ];
+export const quizAppCarousel = [
+    { name: 'Login', source: 'quizApp/Login.png' },
+    { name: 'Question', source: 'quizApp/Question.png' },
+    { name: 'Result', source: 'quizApp/Result.png' },
+    { name: 'Correct Answer', source: 'quizApp/Correct Answer.png' },
+];
 
 export interface ContactFormInterface {
     from_name: string;

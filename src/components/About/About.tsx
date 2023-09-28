@@ -64,11 +64,7 @@ const About = () => {
                 </List>
                 <Typography sx={{ fontSize: { lg: '13px', xl: '15px' }, fontFamily: "'Poppins', sans-serif", color: '#748182', lineHeight: '28px' }}>
                     Besides, I <b>enjoy challenges</b> and am always trying to leave my comfort zone to seek further improvements. I enjoy the
-                    tremendous satisfaction gained from my improvements especially when I am looking back. For instance, this is my{' '}
-                    <a style={{ color: '#748182' }} href="https://hidden-dawn-57338.herokuapp.com/" target="_blank" rel="noreferrer">
-                        personal website
-                    </a>{' '}
-                    one year ago.
+                    tremendous satisfaction gained from my improvements especially when I am looking back.
                 </Typography>
             </Box>
         </Box>
