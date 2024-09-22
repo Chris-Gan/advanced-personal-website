@@ -8,7 +8,7 @@ import { cardDetails, InterestedFields } from '../../utils/utils';
 const Certification = () => {
     const [cardStates, setCardStates] = useState<Record<InterestedFields, boolean>>({
         'Actuarial Science': false,
-        'Machine Learning': false,
+        'Artificial Intelligence': false,
         'Web Development': false,
     });
 
@@ -17,14 +17,14 @@ const Certification = () => {
     const showAllCertificates = () => {
         setCardStates({
             'Actuarial Science': true,
-            'Machine Learning': true,
+            'Artificial Intelligence': true,
             'Web Development': true,
         });
     };
     const hideAllCertificates = () => {
         setCardStates({
             'Actuarial Science': false,
-            'Machine Learning': false,
+            'Artificial Intelligence': false,
             'Web Development': false,
         });
     };

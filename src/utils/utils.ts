@@ -112,7 +112,7 @@ export const particlesConfig = {
     },
 };
 
-export type InterestedFields = 'Actuarial Science' | 'Machine Learning' | 'Web Development';
+export type InterestedFields = 'Actuarial Science' | 'Artificial Intelligence' | 'Web Development';
 
 export interface FrontCardDetails {
     title: InterestedFields;
@@ -131,7 +131,7 @@ export const cardDetails: CardDetails[] = [
             title: 'Web Development',
             descriptions: [
                 'I discovered my genuine interest in web development especially on the front-end part during my Machine Learning exploration.',
-                'I realised that what I enjoyed the most is neither analysing the data nor increasing the model prediction accuracy, I gained the most satisfactions seeing my codes being converted into something attractive on the screen',
+                'I realised that what I enjoyed the most is neither analysing the data nor increasing the model prediction accuracy, I gained the most satisfactions seeing my codes being converted into something attractive on the screen.',
             ],
         },
         back: [
@@ -154,13 +154,18 @@ export const cardDetails: CardDetails[] = [
     },
     {
         front: {
-            title: 'Machine Learning',
+            title: 'Artificial Intelligence',
             descriptions: [
-                'Being one of the hottest topic within this few years, Machine Learning has triggered my interests.',
-                'Thanks for all the free resources on Coursera and the free time granted from the pandemic lockdown, I completed a few courses on Data Science & Machine Learning which give me deeper and more holistic exposures into this field',
+                'Being one of the hottest topic within this few years, Artificial Intelligence/ Machine Learning has triggered my interests.',
+                'Thanks for all the free resources on Coursera and the free time granted from the pandemic lockdown, I completed a few courses on Data Science & Machine Learning which give me deeper and more holistic exposures into this field.',
+                'Furthermore, I am also now certified as Azure AI Engineer Associate!',
             ],
         },
         back: [
+            {
+                organisation: 'Microsoft Azure',
+                certificates: [{ name: 'Azure AI Engineer Associate (AI-102)', source: 'certificates/Azure AI Engineer.pdf' }],
+            },
             {
                 organisation: 'Coursera',
                 certificates: [
@@ -177,8 +182,8 @@ export const cardDetails: CardDetails[] = [
         front: {
             title: 'Actuarial Science',
             descriptions: [
-                'I had a degree in Actuarial Science & Finance and I attempted a few professional exam held by Society of Actuaries (SOA) during my undergraduate studies',
-                'Society of Actuaries (SOA) is a global professional organization for actuaries. The society advances actuaries as leaders in measuring and managing risk to improve financial outcomes for individuals, organizations, and the public',
+                'I had a degree in Actuarial Science & Finance and I attempted a few professional exam held by Society of Actuaries (SOA) during my undergraduate studies.',
+                'Society of Actuaries (SOA) is a global professional organization for actuaries. The society advances actuaries as leaders in measuring and managing risk to improve financial outcomes for individuals, organizations, and the public.',
             ],
         },
         back: [
@@ -236,6 +241,13 @@ export const quizAppCarousel = [
     { name: 'Question', source: 'quizApp/Question.png' },
     { name: 'Result', source: 'quizApp/Result.png' },
     { name: 'Correct Answer', source: 'quizApp/Correct Answer.png' },
+];
+export const serviceRequestAppCarousel = [
+    { name: 'Login', source: 'serviceRequestApp/Login.png' },
+    { name: 'SignUp', source: 'serviceRequestApp/SignUp.png' },
+    { name: 'Dashboard', source: 'serviceRequestApp/Dashboard.png' },
+    { name: 'Creation', source: 'serviceRequestApp/Creation.png' },
+    { name: 'Edit', source: 'serviceRequestApp/Edit.png' },
 ];
 
 export interface ContactFormInterface {

@@ -47,8 +47,8 @@ const About = () => {
                     ABOUT ME
                 </Typography>
                 <Typography sx={{ fontSize: { lg: '13px', xl: '15px' }, fontFamily: "'Poppins', sans-serif", color: '#748182', lineHeight: '28px' }}>
-                    I am a <b>self-taught</b> front-end web developer based in Melbourne, Australia, currently working remotely for an Insurtech
-                    company. I am a <b>active yet silent doer</b> who believe in:
+                    I am a <b>self-taught</b> Software Engineer based in Melbourne, Australia, currently working remotely for an Insurtech company. I
+                    am a <b>active yet silent doer</b> who believe in:
                 </Typography>
                 <List sx={{ listStyleType: 'circle', pl: { xs: 2.5, md: 4 } }}>
                     <QuoteList

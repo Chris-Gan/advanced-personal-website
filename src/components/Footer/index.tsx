@@ -24,7 +24,7 @@ const Footer = () => {
                     <EmailIcon sx={{ color: '#fff', fontSize: '16px' }} />
                 </a>
             </Box>
-            <Typography sx={{ color: '#748182', fontSize: '15px' }}>Copyright © 2023 Chris Gan, All rights Reserved.</Typography>
+            <Typography sx={{ color: '#748182', fontSize: '15px' }}>Copyright © 2024 Chris Gan, All rights Reserved.</Typography>
             <Typography sx={{ color: '#748182', fontSize: '15px' }}>Created by Chris Gan</Typography>
         </Box>
     );

@@ -15,7 +15,7 @@ const FrontCard: FC<FrontCardProps> = ({ title, description, updateCardFlipped, 
     };
     return (
         <Box display="flex" flexDirection="column" sx={{ flex: 1, borderRadius: '8px', px: 2, py: 3, ...style }}>
-            <Box display="flex" flexDirection="column" sx={{ minHeight: { lg: '60vh', xl: '30vh' } }}>
+            <Box display="flex" flexDirection="column" sx={{ minHeight: { lg: '60vh', xl: '35vh' } }}>
                 <Typography
                     sx={{ fontSize: '23px', fontFamily: "'Poppins', sans-serif", fontWeight: 'bold', lineHeight: '30px', mb: 1 }}
                     gutterBottom

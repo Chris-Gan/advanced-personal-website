@@ -30,7 +30,7 @@ const AnimatedBackground: FC = () => {
                     alt="personal-animated"
                 />
                 <Typography sx={{ fontWeight: '800', mt: 3.5, mb: 2.5, fontSize: { xs: '20px', lg: '30px' } }}>
-                    {`I'm`} <Typed strings={[' Chris Gan.', ' a front-end developer.']} typeSpeed={40} backSpeed={50} loop />
+                    {`I'm`} <Typed strings={[' Chris Gan.', ' a Software Engineer.']} typeSpeed={40} backSpeed={50} loop />
                 </Typography>
                 <Box display="flex" justifyContent="space-between" sx={{ minWidth: { xs: '20%', lg: '8%' }, zIndex: 3 }}>
                     <a href="https://github.com/Chris-Gan?tab=repositories" target="_blank" rel="noreferrer" style={{ color: 'black' }}>

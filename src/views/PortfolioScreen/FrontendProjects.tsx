@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import { FC } from 'react';
-import { amazonAppCarousel, chatGPTAppCarousel, emailRegistrationCarousel, newsAppCarousel, socialAppCarousel } from '../../utils/utils';
+import { amazonAppCarousel, chatGPTAppCarousel, newsAppCarousel, socialAppCarousel } from '../../utils/utils';
 import PortfolioCard from '../../components/PortfolioCard/PortfolioCard';
 
 interface Props {
@@ -10,12 +10,12 @@ interface Props {
 const FrontendProjects: FC<Props> = ({ currentTab, index }) => {
     return currentTab === index ? (
         <Box display="flex" sx={{ pt: 2, flexDirection: { xs: 'column', md: 'row' }, flexWrap: 'wrap' }}>
-            <PortfolioCard
+            {/* <PortfolioCard
                 title="Email Registration"
                 description="An email registration system created with language switches, theme toggling, form validations & mobile responsiveness"
                 redirectedUrl="https://invitation-coding-challenge.vercel.app/"
                 carouselInputArray={emailRegistrationCarousel}
-            />
+            /> */}
             <PortfolioCard
                 title="Cloned Amazon"
                 description="Cloning Amazon with limited functionalities using NextJS 13, Tailwind CSS, Firebase, Google Authentication, Stripe & Webhook "
@@ -25,13 +25,13 @@ const FrontendProjects: FC<Props> = ({ currentTab, index }) => {
             <PortfolioCard
                 title="Cloned ChatGPT"
                 description="Cloning ChatGPT using NextJS 13, Tailwind CSS, Firebase & Google Authentication "
-                redirectedUrl="https://chatgpt-clone-drk7x0tjb-chris-gan.vercel.app/"
+                redirectedUrl="https://chatgpt-clone-dkav-6ua6x1csy-chrisgans-projects.vercel.app/"
                 carouselInputArray={chatGPTAppCarousel}
             />
             <PortfolioCard
                 title="News Website"
                 description="This is a NextJS 13 web application created mainly on the application of server side rendering, Tailwind CSS and dark & light mode toggle "
-                redirectedUrl="https://chris-news-app-chris-gan.vercel.app/"
+                redirectedUrl="https://chris-news-app-pscq-chris-gan-chrisgans-projects.vercel.app/"
                 carouselInputArray={newsAppCarousel}
             />
             <PortfolioCard

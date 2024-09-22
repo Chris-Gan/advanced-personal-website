@@ -10,16 +10,16 @@ const LeftInfo = () => {
             </Typography>
             <Box display="flex" flexDirection="column" sx={{ mb: { xs: 1, md: 5 } }}>
                 <Typography variant="h5" sx={{ fontFamily: "'Poopins', sans-serif", color: '#414141', fontSize: '14.5px', pt: 5 }}>
-                    662 Blackburn Road, Notting Hill 3168 <br />
+                    Southbank 3006 <br />
                     Victoria, Australia
                 </Typography>
                 <Typography variant="h5" sx={{ fontFamily: "'Poopins', sans-serif", color: '#414141', fontSize: '14.5px', pt: 5 }}>
-                    ganboontoh@gmail.com <br />
+                    chris.gan0831@gmail.com <br />
                     +(61) 4 666 94 133
                 </Typography>
             </Box>
             <Button sx={{ maxWidth: { xs: '80vw', md: '100vw' } }} endIcon={<DownloadIcon />} variant="outlined">
-                <a href="Chris's Resume 13 July 2023.pdf" style={{ color: 'inherit', textDecoration: 'none' }} download>
+                <a href="Chris_Gan_CV_Full_Stack_Developer.pdf" style={{ color: 'inherit', textDecoration: 'none' }} download>
                     Download Resume
                 </a>
             </Button>
